@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int t,v;
+    float l;
+    scanf("%d %d",&v,&t);
+    
+    l=(v*t)/12.0;
+    printf("%.3f\n",l);
+ 
+    return 0;
+}
