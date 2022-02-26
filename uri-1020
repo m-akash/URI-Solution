@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int n, years, months, days;
+    scanf("%d", &n);
+
+    years = n / 365;
+    n = (n % 365);
+    months = n / 30;
+    days = (n % 30);
+
+    printf("%d ano(s)\n", years);
+    printf("%d mes(es)\n", months);
+    printf("%d dia(s)\n", days);
+
+    return 0;
+}
