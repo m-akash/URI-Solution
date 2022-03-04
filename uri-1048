@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main()
+{
+
+    float a, ganho, navo;
+    int em;
+    char c = '%';
+
+    scanf("%f", &a);
+
+    if (a > 0.00 && a <= 400.00)
+    {
+        ganho = (a * 15.00) / 100;
+        navo = a + ganho;
+        em = 15;
+        printf("Novo salario: %.2f\n", navo);
+        printf("Reajuste ganho: %.2f\n", ganho);
+        printf("Em percentual: %d %c\n", em, c);
+    }
+
+    else if (a >= 400.01 && a <= 800.00)
+    {
+        ganho = (a * 12.00) / 100;
+        navo = a + ganho;
+        em = 12;
+        printf("Novo salario: %.2f\n", navo);
+        printf("Reajuste ganho: %.2f\n", ganho);
+        printf("Em percentual: %d %c\n", em, c);
+    }
+
+    else if (a >= 800.01 && a <= 1200.00)
+    {
+        ganho = (a * 10.00) / 100;
+        navo = a + ganho;
+        em = 10;
+        printf("Novo salario: %.2f\n", navo);
+        printf("Reajuste ganho: %.2f\n", ganho);
+        printf("Em percentual: %d %c\n", em, c);
+    }
+
+    else if (a > 1200.01 && a <= 2000.00)
+    {
+        ganho = (a * 7.00) / 100;
+        navo = a + ganho;
+        em = 7;
+        printf("Novo salario: %.2f\n", navo);
+        printf("Reajuste ganho: %.2f\n", ganho);
+        printf("Em percentual: %d %c\n", em, c);
+    }
+    else if (a > 2000.00)
+    {
+        ganho = (a * 4.00) / 100;
+        navo = a + ganho;
+        em = 4;
+        printf("Novo salario: %.2f\n", navo);
+        printf("Reajuste ganho: %.2f\n", ganho);
+        printf("Em percentual: %d %c\n", em, c);
+    }
+
+    return 0;
+}
